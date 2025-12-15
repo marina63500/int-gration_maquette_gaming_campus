@@ -1,0 +1,440 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+:root{
+  --font1: 'Montserrat Thin', sans-serif;  /* pour les textes */
+  --font2: 'Montserrat Medium', sans-serif; /* pour les titres */
+  --color1: #151515;
+  --color2:#700ead;
+  --color3:#ffffff;
+  --color4:#f7f7f7;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: var(--font1), sans-serif;
+  list-style: none;
+}
+
+body{
+  background: var(--color3);
+  font-family: var(--font1);
+  min-height: 100vh; 
+}
+
+nav{
+  font-family: var(--font2);
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 80px;  
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+li{
+  cursor:pointer;
+}
+
+li:hover{
+  color: var(--color2);  
+}
+
+#language{
+  border-radius: 20px;
+}
+#language button{ 
+  border: none;  
+  border-radius: 20px; 
+  padding: 0 10px ; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  width: 75px; 
+  height: 30px;
+}
+
+header{
+  height: 500px;
+  background: url('./assets/img/bg.jpg') no-repeat center/cover; 
+  
+}
+
+.main-header{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color3);  
+}
+
+#logo,h1{
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+h1{
+  font-family: var(--font2);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color3);  
+}
+
+#button-header{
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 50px;
+  border: none;
+  color: var(--color3);
+  background:rgba(0, 0,0, 0.3);
+  border: 1px solid var(--color3);
+  text-transform: uppercase;
+  font-weight: bold; 
+}
+
+#button-header:hover{
+  background: var(--color3);
+  border: none;
+  cursor: pointer;
+  color: var(--color1);
+}
+
+.header-text{
+  text-align: center;
+  margin: 50px auto;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 70%;
+}
+
+.icon-part{
+  background: var(--color1);
+}
+
+.icon-part-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px;  
+}
+
+.list-icon-part{
+  text-align: center;
+  color: var(--color3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.list-icon-part h3{
+  font-family: var(--font2);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-icon-button{
+  width: 150px;
+  height: 35px;
+  border: none;
+  color: var(--color3);
+  background:var(--color1);
+  border:1px solid var(--color3);
+}
+
+.list-icon-button:hover{
+  background: var(--color3);
+  cursor: pointer;
+  color: var(--color1);
+}
+  
+.news-part{   
+  background: var(--color4);
+}
+
+.header-news{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;  
+  margin: 0 center;
+  padding: 80px;
+  width: 90%;  
+}
+
+.main-news{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-news-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.left-part{ 
+  margin-bottom: 50px;
+}
+.left-part h2{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+}
+
+.right-part button{
+  width: 200px;
+  height: 40px;
+  background: var(--color3);
+  border: 1px solid var(--color1);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-news{
+  margin: 20px 0 50px 0;
+}
+.main-news-container{
+  display: flex; 
+  gap: 30px;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pic{
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+.pic h4{  
+  font-weight: bold;
+  font-size: 1rem; 
+}
+
+.pic img{
+  width: 100%;
+  height: auto;
+}
+
+.pic p{
+  justify-items: center;
+}
+.link a{
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: bold; 
+  text-transform: uppercase; 
+  margin-bottom: 0;
+}
+
+.contact{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list{
+  width: 25%;  
+  text-align: left;
+  padding: 20px ;
+  
+}
+
+.list h5{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.infos-p li{
+  cursor: pointer;
+  margin-bottom: 10px;  
+}
+
+.infos-p li a{
+  text-decoration: none;
+  color: var(--color2);
+  cursor: pointer;
+  font-weight: bold;  
+}
+
+#parents-questions{
+  width: 90%; 
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.list a{
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: bold; 
+}
+
+h6{
+  font-size: 0.8rem;
+  line-height : 1.5rem;
+}
+
+ h5.network{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.footer-logos{
+  margin-bottom: 20px;
+}
+.footer-logos i{
+  font-size: 1.2rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.list p{
+ font-weight: bold;
+}
+
+.contact-medias{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;  
+  margin: 20px auto;
+  border-top: 1px solid var(--color1);
+
+}
+
+.medias-text{
+  font-weight: bold;
+  padding: 20px;
+  
+}
+.medias-text h3{  
+  text-transform: uppercase;
+  margin-bottom: 15px;  
+}
+.medias-logos{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+footer{
+  background: var(--color1);
+  color: var(--color3);
+  display: flex;
+  flex-direction: column; 
+  padding: 30px;
+  
+}
+
+footer h3{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+
+
+footer ul{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+/* --------media queries------------ */
+
+@media  screen and (max-width: 1260px){
+  nav ul{
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+  }
+  #language button{
+    width: 65px;
+    height: 25px;
+    font-size: 12px;
+  }  
+}
+
+@media screen and (max-width: 1050px){
+  nav ul{
+    gap: 20px;
+    width: 90%;
+    padding: 10px;
+    font-size: 0.8rem;
+   margin: 20px auto;
+    
+  }
+
+  #language button{
+    width: 60px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+ 
+} 
+
+@media screen and (max-width: 950px){
+  .icon-part-container{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .header-news, .main-news{    
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .main-news-container{
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+}
+
+@media screen and (max-width: 860px){
+  nav{
+  display: none;
+  }
+  
+  .header-news{
+    margin: 0 auto;
+  }
+  .contact{
+    display: none;
+  }
+}
+
